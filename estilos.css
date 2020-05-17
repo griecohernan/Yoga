@@ -283,6 +283,10 @@ header .titular h1{
 }
 
 
+.owl-dots{
+    display: none;
+}
+
 #testimoniales h2 {
     padding: 45px 0;
     font-size: 31px;
