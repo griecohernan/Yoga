@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background-image: url(imagenes/encabezado.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+header .titular{
+    padding-left: 123px;
+}
+
+
+header .titular h1 {
+    font-size: 130px;
+    color: #fff;
+    padding-top: 43px;
+}
+
+.titular p{
+  color: #fff;
+}
+
+.titular a {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align:center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#studio {
+    margin-top: 30px;
+}
+
+#studio .contenedor-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.columna img{
+    width: 100%;
+} 
+
+.columna h3 {
+    padding: 10px 0;
+    
+}
+
+.columna{
+    width: 30%;
+    margin: 20px 0;
+}
+
+#studio h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0;
+
+}
+
+#testimoniales{
+    padding: 26px 0;
+    text-align: center;
+    background-image: url(imagenes/testi-back.jpg);
+    background-size: cover;
+}
+
+#testimoniales h2{
+    padding: 60px 0;
+    font-size: 37px;
+}
+
+.item{
+    padding: 0 20px;
+}
+
+.item p {
+    margin: 20px 0;
+}
+
+#testimoniales span{
+    position: relative;
+    bottom: 22px;
+}
+
+#testimoniales button {
+    border: 2px solid black;
+    height: 32px;
+    width: 30px;
+}
+
+.owl-nav{
+    display: block !important;
+    font-size: 45px;
+}
+
+.owl-item img{
+    width: 80px !important;
+    margin: auto;
+}
+
+#welcome .contenedor{
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.texto-welcome{
+    text-align: center;
+}
+
+.texto-welcome h3{
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+.texto-welcome p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.texto-welcome a {
+    background: #e8e6e6;
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#clases {
+    background-image: url(imagenes/numeros.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+
+#clases .contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.numero {
+    padding: 150px 0;
+}
+
+.num {
+    font-size: 160px;
+    height: 210px;
+}
+
+.numero p:last-child{
+    font-size: 25px;
+}
+
+footer{
+    background: #000;
+    color: #fff;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+footer .redes svg{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .redes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+        /* RESPONSIVE  */
+
+
+
+
+
+@media screen and (max-width:800px){
+
+.menu-icon{
+    display: block;
+}
+
+header {
+    height: 80vh;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 66px;
+    background: black;
+    width: 100%;
+    left: 0;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 7px 20px;
+}
+
+header .titular{
+padding-left: 20px;
+}
+
+header .titular h1{
+    font-size: 87px;
+} 
+
+#studio {
+    margin-top: 0;
+}
+
+#studio h2{
+    font-size: 24px;
+}
+
+#studio .contenedor-columnas{
+    flex-direction: column;
+}
+
+.columna{
+        width: 100%;
+        margin: auto;
+        margin: 20px auto;
+}
+
+
+#testimoniales h2 {
+    padding: 45px 0;
+    font-size: 31px;
+}
+
+#welcome .contenedor{
+    flex-direction: column;
+}
+
+.imagen-welcome img {
+    width: 100%;
+    margin: auto;
+}
+
+.texto-welcome h3 {
+    font-size: 24px;
+}
+
+#clases .contenedor{
+    flex-direction: column;
+}
+
+.numero{
+    padding: 30px 0;
+}
+
+.num {
+    font-size: 141px;
+    height: 175px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .contenedor{
+    flex-direction: column;
+    padding:45px 0;
+}
+
+footer .redes {
+    margin-top: 20px;
+}
+
+footer .redes svg {
+    margin: 0 15px;
+}
