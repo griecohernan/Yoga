@@ -128,6 +128,7 @@ header .titular h1 {
     border: 2px solid black;
     height: 32px;
     width: 30px;
+    outline:0;
 }
 
 .owl-nav{
